@@ -2,7 +2,7 @@ import { createClient } from '@/utils/supabase/server'
 
 export default async function Home() {
   // 1. Initialize the Supabase server client
-  const supabase = createClient()
+const supabase = createClient()
 
   // 2. Fetch data from the training_sessions table
   const { data: sessions, error } = await supabase
